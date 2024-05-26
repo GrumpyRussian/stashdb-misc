@@ -4,6 +4,7 @@ processed 76741 performers
 
 heights stats
 =============
+
 height|number of performers
 ------|--------------------
 None|35499
@@ -91,6 +92,7 @@ None|35499
 
 all heights
 ===========
+
 height|performer
 ------|---------
 0|[Cadence Calibre](https://stashdb.org/performers/004909a3-517a-4e05-ac0d-57ce87f99b82)

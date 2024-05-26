@@ -29,7 +29,7 @@ print()
 
 print('heights stats')
 print('=============')
-
+print()
 print('height|number of performers')
 print('------|--------------------')
 
@@ -42,7 +42,7 @@ print()
 
 print('all heights')
 print('===========')
-
+print()
 print('height|performer')
 print('------|---------')
 for e in sorted(results, key=lambda e: e['height']):

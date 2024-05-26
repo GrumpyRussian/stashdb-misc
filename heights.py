@@ -41,7 +41,7 @@ print('===============')
 
 results = []
 def process_performer(e):
-    if e['height'] is not None and e['height'] < 100:
+    if e['height'] is not None and e['height'] < 140:
         results.append(e)
 process('performers', process_performer)
 

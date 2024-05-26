@@ -14,17 +14,21 @@ def process(what, func):
                 func(json.loads(b''.join(entry.get_blocks())))
     print('processed', n, what, ' ')
 
-
-print('heights stats')
-print('=============')
-
 heights = {}
+results = []
 def process_performer(e):
     if e['height'] not in heights:
         heights[e['height']] = 1
     else:
         heights[e['height']] += 1
+    if e['height'] is not None:
+        results.append(e)
 process('performers', process_performer)
+print()
+
+
+print('heights stats')
+print('=============')
 
 print('height|number of performers')
 print('------|--------------------')
@@ -36,14 +40,8 @@ for h in sorted(heights):
 print()
 
 
-print('strange heights')
-print('===============')
-
-results = []
-def process_performer(e):
-    if e['height'] is not None and e['height'] < 140:
-        results.append(e)
-process('performers', process_performer)
+print('all heights')
+print('===========')
 
 print('height|performer')
 print('------|---------')
